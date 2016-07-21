@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="page page_main">
+    <script src="{{ "/javascripts/jquery-2.2.3.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <div class="page__browsehappy">
+      <!--[if lt IE 8]>
+      <p class="browsehappy">Вы используете<strong>устаревший</strong> браузер. Пожалуйста<a href="http://browsehappy.com" target="_blank">обновите браузер</a> для лучшего отображения сайта.</p><![endif]-->
+    </div>
+    {% include menu.html %}
+    <div class="page__content">
+      <div class="page__wrapper">
+        {% include header.html %}
+          {{ content }}
+       
+      </div>
+    </div>
+    <div class="page__overlay"></div>
+    <script src="{{ "/javascripts/main.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/javascripts/plugins.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  
+  </body>
+
+</html>
