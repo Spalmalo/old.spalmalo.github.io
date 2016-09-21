@@ -6,6 +6,14 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <link href="/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link type="image/png" href="/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32">
+  <link type="image/png" href="/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16">
+  <link href="/images/favicons/manifest.json" rel="manifest">
+  <link href="/images/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#62347e">
+  <link href="/images/favicons/favicon.ico" rel="shortcut icon">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+
   <link rel="stylesheet" href="{{ "/css/reset.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

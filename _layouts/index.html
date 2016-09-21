@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="page page_main">
+  <body class="page {{ page.body_class }}">
     <script src="{{ "/javascripts/jquery-2.2.3.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <div class="page__browsehappy">
       <!--[if lt IE 8]>
@@ -13,14 +13,12 @@
     <div class="page__content">
       <div class="page__wrapper">
         {% include header.html %}
-          {{ content }}
-       
+        {{ content }}
       </div>
     </div>
     <div class="page__overlay"></div>
     <script src="{{ "/javascripts/main.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <script src="{{ "/javascripts/plugins.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-  
   </body>
 
 </html>
