@@ -32,205 +32,201 @@ layout: default
           <tr>
             <th class="project-description__headline">Задача:</th>
             <td class="project-description__text">
-              <p>Просто сделать все круто.</p>
-              <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в
-                абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым
-                словам "lorem ipsum" сразу показывает, как много веб-страниц.</p>
-
-              </td>
-            </tr>
-          </table>
-        </div>
+              <p>Сделать брендбук, не просто обозначив фирменный стиль нашей компании, но и использовав атмосферу непринужденности и творческого подхода к любой работе, царящую в компании.</p>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="project-full__slider">
-        <div class="main-slider">
-          <div class="main-slider__slides">
-            <div class="main-slider__item">
-              <div class="main-slider-item">
-                <div class="main-slider-item__image">
-                  <img src="/images/content/project-full/slides/docs.jpg" alt="undefined «undefined»">
-                </div>
+    </div>
+    <div class="project-full__slider">
+      <div class="main-slider">
+        <div class="main-slider__slides">
+          <div class="main-slider__item">
+            <div class="main-slider-item">
+              <div class="main-slider-item__image">
+                <img src="/images/content/project-full/slides/docs.jpg" alt="undefined «undefined»">
               </div>
             </div>
-            <div class="main-slider__item">
-              <div class="main-slider-item">
-                <div class="main-slider-item__image">
-                  <img src="/images/content/project-full/slides/badges.jpg" alt="undefined «undefined»">
-                </div>
+          </div>
+          <div class="main-slider__item">
+            <div class="main-slider-item">
+              <div class="main-slider-item__image">
+                <img src="/images/content/project-full/slides/badges.jpg" alt="undefined «undefined»">
               </div>
             </div>
-            <div class="main-slider__item">
-              <div class="main-slider-item">
-                <div class="main-slider-item__image">
-                  <img src="/images/content/project-full/slides/brandbook.jpg" alt="undefined «undefined»">
-                </div>
+          </div>
+          <div class="main-slider__item">
+            <div class="main-slider-item">
+              <div class="main-slider-item__image">
+                <img src="/images/content/project-full/slides/brandbook.jpg" alt="undefined «undefined»">
               </div>
             </div>
           </div>
         </div>
-        <script>
-          $(document).ready(function()
+      </div>
+      <script>
+        $(document).ready(function()
+        {
+          $('.main-slider__slides').slick(
           {
-            $('.main-slider__slides').slick(
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            dots: true,
+            pauseOnDotsHover: true,
+            infinite: true,
+            pauseOnHover: true,
+            arrows: true,
+            useTransform: true,
+            cssEase: "ease",
+            responsive: [
             {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              autoplay: false,
-              autoplaySpeed: 3000,
-              dots: true,
-              pauseOnDotsHover: true,
-              infinite: true,
-              pauseOnHover: true,
-              arrows: true,
-              useTransform: true,
-              cssEase: "ease",
-              responsive: [
+              breakpoint: 900,
+              settings:
               {
-                breakpoint: 900,
-                settings:
-                {
-                  dots: false
-                }
-              },
+                dots: false
+              }
+            },
+            {
+              breakpoint: 480,
+              settings:
               {
-                breakpoint: 480,
-                settings:
-                {
-                  arrows: false,
-                  dots: false
-                }
-              }]
-            });
+                arrows: false,
+                dots: false
+              }
+            }]
           });
+        });
 
-        </script>
-      </div>
-      <div class="project-full__team-widget">
-        <div class="team-widget">
-          <div class="team-widget__inner">
-            <div class="team-widget__item">
-              <div class="team-widget__photo">
-                <div class="helmet-avatar">
-                  <div class="helmet-avatar__image">
-                    <img src="/images/content/team-widget/1.png" alt="Дизайнер Исмар">
-                  </div>
+      </script>
+    </div>
+    <div class="project-full__team-widget">
+      <div class="team-widget">
+        <div class="team-widget__inner">
+          <div class="team-widget__item">
+            <div class="team-widget__photo">
+              <div class="helmet-avatar">
+                <div class="helmet-avatar__image">
+                  <img src="/images/content/team-widget/1.png" alt="Дизайнер Исмар">
                 </div>
-              </div>
-              <div class="team-widget__info">
-                <div class="team-widget__name">Исмар</div>
-                <div class="team-widget__position">Дизайнер</div>
               </div>
             </div>
-            <div class="team-widget__item">
-              <div class="team-widget__photo">
-                <div class="helmet-avatar">
-                  <div class="helmet-avatar__image">
-                    <img src="/images/content/team-widget/10.png" alt="Дизайнер Денис">
-                  </div>
-                </div>
-              </div>
-              <div class="team-widget__info">
-                <div class="team-widget__name">Денис</div>
-                <div class="team-widget__position">Дизайнер</div>
-              </div>
-            </div>
-            <div class="team-widget__item">
-              <div class="team-widget__photo">
-                <div class="helmet-avatar">
-                  <div class="helmet-avatar__image">
-                    <img src="/images/content/team-widget/11.png" alt="Дизайнер Михаил">
-                  </div>
-                </div>
-              </div>
-              <div class="team-widget__info">
-                <div class="team-widget__name">Михаил</div>
-                <div class="team-widget__position">Дизайнер</div>
-              </div>
+            <div class="team-widget__info">
+              <div class="team-widget__name">Исмар</div>
+              <div class="team-widget__position">Дизайнер</div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="project-full__other-works">
-        <div class="other-works">
-          <h2 class="other-works__title">Другие работы</h2>
-          <div class="other-works__list">
-            <ul class="projects-grid">
-              <li class="projects-grid__item">
-                <div class="projects-grid-item projects-grid-item_color_violet">
-                  <div class="projects-grid-item__image">
-                    <img src="/images/content/projects-grid/4.jpg" alt="Aгрегатор одежды picVpic">
-                  </div>
-                  <div class="projects-grid-item__text">
-                    <div class="projects-grid-item__description">
-                      <div class="projects-grid-item__description-inner">
-                        <span>
-                          <span>Aгрегатор одежды</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="projects-grid-item__title">
-                      <div class="projects-grid-item__title-inner">
-                        <span>
-                          <span>picVpic</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="projects-grid-item__link" href="/projects/picvpic"></a>
+          <div class="team-widget__item">
+            <div class="team-widget__photo">
+              <div class="helmet-avatar">
+                <div class="helmet-avatar__image">
+                  <img src="/images/content/team-widget/10.png" alt="Дизайнер Денис">
                 </div>
-              </li>
-              <li class="projects-grid__item">
-                <div class="projects-grid-item projects-grid-item_color_violet">
-                  <div class="projects-grid-item__image">
-                    <img src="/images/content/projects-grid/2.jpg" alt="Брендбук Spalmalo">
-                  </div>
-                  <div class="projects-grid-item__text">
-                    <div class="projects-grid-item__description">
-                      <div class="projects-grid-item__description-inner">
-                        <span>
-                          <span>Брендбук</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="projects-grid-item__title">
-                      <div class="projects-grid-item__title-inner">
-                        <span>
-                          <span>Spalmalo</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="projects-grid-item__link" href="/projects/spalmalo"></a>
+              </div>
+            </div>
+            <div class="team-widget__info">
+              <div class="team-widget__name">Денис</div>
+              <div class="team-widget__position">Дизайнер</div>
+            </div>
+          </div>
+          <div class="team-widget__item">
+            <div class="team-widget__photo">
+              <div class="helmet-avatar">
+                <div class="helmet-avatar__image">
+                  <img src="/images/content/team-widget/11.png" alt="Дизайнер Михаил">
                 </div>
-              </li>
-              <li class="projects-grid__item">
-                <div class="projects-grid-item projects-grid-item_color_aqua">
-                  <div class="projects-grid-item__image">
-                    <img src="/images/content/projects-grid/3.jpg" alt="Сайт компании MegaCom">
-                  </div>
-                  <div class="projects-grid-item__text">
-                    <div class="projects-grid-item__description">
-                      <div class="projects-grid-item__description-inner">
-                        <span>
-                          <span>Сайт компании</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="projects-grid-item__title">
-                      <div class="projects-grid-item__title-inner">
-                        <span>
-                          <span>MegaCom</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="projects-grid-item__link" href="/projects/megacom"></a>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="team-widget__info">
+              <div class="team-widget__name">Михаил</div>
+              <div class="team-widget__position">Дизайнер</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="project-full__other-works">
+      <div class="other-works">
+        <h2 class="other-works__title">Другие работы</h2>
+        <div class="other-works__list">
+          <ul class="projects-grid">
+            <li class="projects-grid__item">
+              <div class="projects-grid-item projects-grid-item_color_violet">
+                <div class="projects-grid-item__image">
+                  <img src="/images/content/projects-grid/4.jpg" alt="Aгрегатор одежды picVpic">
+                </div>
+                <div class="projects-grid-item__text">
+                  <div class="projects-grid-item__description">
+                    <div class="projects-grid-item__description-inner">
+                      <span>
+                        <span>Aгрегатор одежды</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="projects-grid-item__title">
+                    <div class="projects-grid-item__title-inner">
+                      <span>
+                        <span>picVpic</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="projects-grid-item__link" href="/projects/picvpic"></a>
+              </div>
+            </li>
+            <li class="projects-grid__item">
+              <div class="projects-grid-item projects-grid-item_color_violet">
+                <div class="projects-grid-item__image">
+                  <img src="/images/content/projects-grid/2.jpg" alt="Брендбук Spalmalo">
+                </div>
+                <div class="projects-grid-item__text">
+                  <div class="projects-grid-item__description">
+                    <div class="projects-grid-item__description-inner">
+                      <span>
+                        <span>Брендбук</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="projects-grid-item__title">
+                    <div class="projects-grid-item__title-inner">
+                      <span>
+                        <span>Spalmalo</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="projects-grid-item__link" href="/projects/spalmalo"></a>
+              </div>
+            </li>
+            <li class="projects-grid__item">
+              <div class="projects-grid-item projects-grid-item_color_aqua">
+                <div class="projects-grid-item__image">
+                  <img src="/images/content/projects-grid/3.jpg" alt="Сайт компании MegaCom">
+                </div>
+                <div class="projects-grid-item__text">
+                  <div class="projects-grid-item__description">
+                    <div class="projects-grid-item__description-inner">
+                      <span>
+                        <span>Сайт компании</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="projects-grid-item__title">
+                    <div class="projects-grid-item__title-inner">
+                      <span>
+                        <span>MegaCom</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="projects-grid-item__link" href="/projects/megacom"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="page__buffer"></div>
+</div>
+<div class="page__buffer"></div>
