@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     $('.nav-menu__link').click(function(e) {
       var filterType = $(this).data('id');
-      handler(filterType, menuElement);
+      handler(filterType, this);
     });
 
     if ($('.project-list').length) {
