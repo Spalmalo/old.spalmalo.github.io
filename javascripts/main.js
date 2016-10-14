@@ -36,9 +36,9 @@ $(document).ready(function() {
 
     var $filteredData;
 
-    var handler = function(filterType) {
+    var handler = function(filterType, menuElement) {
       $('.nav-menu__item').removeClass('nav-menu__item_active');
-      $(this).parent().addClass('nav-menu__item_active');
+      $(menuElement).parent().addClass('nav-menu__item_active');
 
       var height = $holder.find('.projects-grid__item').first().height();
       $data.find('.projects-grid__item').css('height', height);
@@ -57,13 +57,13 @@ $(document).ready(function() {
 
     $('.nav-menu__link').click(function(e) {
       var filterType = $(this).data('id');
-      handler(filterType);
+      handler(filterType, menuElement);
     });
 
     if ($('.project-list').length) {
       $(window).on('popstate', function() {
         var filterType = window.location.hash.split("/")[2]
-        handler(filterType);
+        handler(filterType, $(".nav-menu a[data-id="+ filterType +"]"));
       });
     }
 
