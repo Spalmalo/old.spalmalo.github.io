@@ -1,4 +1,24 @@
 $(document).ready(function() {
+
+  // Detect url and set active menu item
+  (function() {
+    var pathname = window.location.pathname;
+    if (pathname.startsWith("/services/smm")) {
+      $(".main-menu__item-smm").addClass("main-menu__item_active");
+    } else if (pathname.startsWith("/services/consulting")) {
+      $(".main-menu__item-consulting").addClass("main-menu__item_active");
+    } else if (pathname.startsWith("/services")) {
+      $(".main-menu__item-services").addClass("main-menu__item_active");
+    } else if (pathname.startsWith("/projects")) {
+      $(".main-menu__item-projects").addClass("main-menu__item_active");
+    } else if (pathname.startsWith("/contacts")) {
+      $(".main-menu__item-contacts").addClass("main-menu__item_active");
+    } else {
+      $(".main-menu__item-home").addClass("main-menu__item_active");
+    }
+  })();
+
+
   svg4everybody();
 
   FastClick.attach(document.body);

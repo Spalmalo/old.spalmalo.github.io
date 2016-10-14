@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body class="page {{ page.body_class }}">
-    <script src="{{ "/javascripts/jquery-2.2.3.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <div class="page__browsehappy">
       <!--[if lt IE 8]>
       <p class="browsehappy">Вы используете<strong>устаревший</strong> браузер. Пожалуйста<a href="http://browsehappy.com" target="_blank">обновите браузер</a> для лучшего отображения сайта.</p><![endif]-->
@@ -17,8 +16,15 @@
       </div>
     </div>
     <div class="page__overlay"></div>
-    <script src="{{ "/javascripts/main.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ "/javascripts/plugins.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-  </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-60264114-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
 </html>
