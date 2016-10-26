@@ -22,5 +22,3 @@ markdown: kramdown
 
 gems:
   - octopress-minify-html
-
-env: production
