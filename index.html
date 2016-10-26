@@ -202,42 +202,6 @@ body_class: page_main
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function()
-        {
-          $('.main-slider__slides').slick(
-          {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            dots: true,
-            pauseOnDotsHover: true,
-            infinite: true,
-            pauseOnHover: true,
-            arrows: true,
-            useTransform: true,
-            cssEase: "ease",
-            responsive: [
-            {
-              breakpoint: 900,
-              settings:
-              {
-                dots: false
-              }
-            },
-            {
-              breakpoint: 480,
-              settings:
-              {
-                arrows: false,
-                dots: false
-              }
-            }]
-          });
-        });
-
-      </script>
     </div>
     <div class="main-page__projects">
       <ul class="projects-grid">
@@ -470,7 +434,7 @@ body_class: page_main
             </div>
           </div>
         </div>
-        
+
         {% include feedback_form.html %}
 
         <div class="main-feedback__bottom">

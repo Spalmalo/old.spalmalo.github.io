@@ -178,5 +178,36 @@ $(document).ready(function() {
     });
   });
 
+  $('.main-slider__slides').slick(
+  {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    dots: true,
+    pauseOnDotsHover: true,
+    infinite: true,
+    pauseOnHover: true,
+    arrows: true,
+    useTransform: true,
+    cssEase: "ease",
+    responsive: [
+    {
+      breakpoint: 900,
+      settings:
+      {
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings:
+      {
+        arrows: false,
+        dots: false
+      }
+    }]
+  });
+
 
 });
