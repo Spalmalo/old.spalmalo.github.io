@@ -19,6 +19,3 @@ github_username:  spalmalo
 
 # Build settings
 markdown: kramdown
-
-gems:
-  - octopress-minify-html
