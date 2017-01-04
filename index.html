@@ -3,7 +3,7 @@ layout: index
 body_class: page_main
 ---
 
-<div class="page__main"> 
+<div class="page__main">
   <div class="main-page">
     <div class="main-page__slider">
       <div class="main-slider">
@@ -425,71 +425,13 @@ body_class: page_main
         </div>
       </div>
     </div>
-    <div class="main-page__feedback">
-      <div class="main-feedback" data-paralax-type="background" data-paralax-speed="5">
-        <div class="main-feedback__services">
-          <div class="main-feedback__services-inner">
-            <div class="main-feedback__inner">
-              {% include services_listing.html %}
-            </div>
-          </div>
-        </div>
 
-        {% include feedback_form.html %}
-
-        <div class="main-feedback__bottom">
-          <div class="main-feedback__bottom-inner">
-            <div class="main-feedback__footer">
-              <footer class="footer footer_main">
-                <div class="footer__inner">
-                  <div class="footer__right">
-                    <div class="footer__social">
-                      <div class="social-icons">
-                        <ul class="social-icons__list">
-                          <li class="social-icons__item social-icons__item_facebook">
-                            <a class="social-icons__icon" href="https://www.facebook.com/spalmalo" title="Facebook">
-                              <svg class="icon icon_facebook">
-                                <use xlink:href="/images/icons.svg#facebook"></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li class="social-icons__item social-icons__item_twitter">
-                            <a class="social-icons__icon" href="https://twitter.com/spalmalo" title="Twitter">
-                              <svg class="icon icon_twitter">
-                                <use xlink:href="/images/icons.svg#twitter"></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li class="social-icons__item social-icons__item_instagram">
-                            <a class="social-icons__icon" href="https://www.instagram.com/spalmalo" title="Instagram">
-                              <svg class="icon icon_instagram">
-                                <use xlink:href="/images/icons.svg#instagram"></use>
-                              </svg>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="footer__left">
-                    <div class="footer__copyright">
-                      <div class="copyright">&copy;&nbsp;2016 ОсОО Spalmalo</div>
-                    </div>
-                    <div class="footer__address">
-                      <div class="footer-address">Бишкек, Кыргызская Республика
-                        <br>
-                        <a href="mailto:office@spalmalo.com">office@spalmalo.com</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </div>
-        <div class="main-feedback__telescope"></div>
+    <div class="main-page__services-list">
+      <div class="main-page__services-list-inner">
+        {% include services_listing.html %}
       </div>
     </div>
   </div>
 </div>
 <div class="page__buffer"></div>
+{% include footer.html %}
